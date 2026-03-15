@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(135deg, #a0d2eb, #d0bdf4, #8458b3, #820bb9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    position: relative;
+    width: 900px;
+    height: 350px;
+    display: flex;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.left{
+    flex: 1;
+    padding: 40px;
+    background: #a0d2eb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.left h2{
+    margin-bottom: 25px;
+    font-size: 24px;
+    color: #1e293b;
+}
+
+.left label{
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #475569;
+}
+
+.input-group{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+input{
+    flex: 2;
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+}
+
+select{
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+}
+
+button{
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #29488f, #0ea5e9);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.35s;
+    margin-top: 15px;
+}
+
+button:hover{
+    opacity: 0.85;
+    background: linear-gradient(135deg, #2758ca, #00aeff);
+    color: black;
+}
+
+.right{
+    flex: 1;
+    background: linear-gradient(135deg, #29488f, #6e1199);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.result-box{
+    text-align: center;
+    font-size: 22px;
+    line-height: 2.2;
+}
+
+.result-box p{
+    margin: 12px 0;
+    font-weight: 500;
+}
+
+.credit{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 14px;
+    color: white;
+}

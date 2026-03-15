@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+
+    <!-- Linking External CSS File -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Main Card / Container -->
+    <div class="card">
+
+    <!-- Left Section -->
+    <div class="left">
+        <h2>Enter Temperature</h2>
+        <label>Degree</label>
+
+        <div class="input-group">
+            <!-- Input Field for Temperature -->
+            <input type="number" id="temperature" placeholder="Enter Value">
+            <!-- Dropdown for Unit -->
+            <select id="unit">
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+                <option value="kelvin">Kelvin</option>
+            </select>
+        </div>
+
+        <!-- Button to call Function -->
+        <button onclick="convertTemp()">Convert →</button>
+    </div>
+
+    <!-- Right Section -->
+     <div class="right">
+        <!-- To Display Result -->
+        <div class="result-box">
+            <p id="celsius">Celsius : </p>
+            <p id="fahrenheit">Fahrenheit : </p>
+            <p id="kelvin">Kelvin : </p>
+        </div>
+     </div>
+
+     <!-- Credit Section -->
+     <div class="credit">
+        Developed By <u>SAMEER SAHU</u>
+     </div>
+    </div>
+    
+    <!-- Linking External JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
